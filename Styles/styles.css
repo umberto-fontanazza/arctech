@@ -68,8 +68,10 @@ a {
 #features .feature-box {
   height: 70vh;
   padding: 10px;
-  margin: 10px;
+  margin: 20px;
   border: 1px solid black;
+  max-width: 400px;
+  max-height: 600px;
   background-image: url("../Images/hero-image.jpg");
   background-image: -webkit-image-set();
   background-image: image-set();
@@ -82,6 +84,15 @@ a {
   width: 100%;
   position: relative;
   top: 5px;
+}
+@media screen and (min-width: 768px) {
+  #features {
+    justify-content: center;
+    align-items: center;
+  }
+  #features .feature-box:not(:last-of-type) {
+    margin-right: 3vw;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
