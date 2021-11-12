@@ -14,8 +14,28 @@ body {
 }
 
 section {
-    height: 100vh;
+    padding: 0 20px;
     border-bottom: 1px solid black;
+
+    @media screen and (min-width: 768px) {
+        height: 100vh;
+    }
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--color-dark, black);
+    padding: 12px;
+    border-radius: 5px;
+    transition: var(--transition-default, 350ms ease);
+
+    &:hover {
+        transform: var(--transform-scale-default,scale(1.05));
+    }
+}
+
+a {
+    text-decoration: none;
 }
 
 #main-slider {
@@ -47,19 +67,41 @@ section {
     }
 }
 
-.btn {
-    display: inline-block;
-    background-color: var(--color-dark, black);
-    padding: 12px;
-    border-radius: 5px;
-    transition: var(--transition-default, 350ms ease);
+#features {
+    display: flex;
+    flex-wrap: wrap;
 
-    &:hover {
-        transform: var(--transform-scale-default,scale(1.05));
+    color: var(--color-bright, white);
+
+    .feature-box {
+        height: 70vh;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid black;
+
+        background-image: url("../Images/hero-image.jpg");
+        background-image: -webkit-image-set();
+        background-image: image-set();
+
+        h3 {
+            &::after {
+                content: "";
+                background-color: var(--color-accent);
+                display: block;
+                height: 2px;
+                width: 100%;
+                position: relative;
+                top: 5px;
+            }
+        }
+
+
+    }
+
+    @media screen and (min-width: 768px) {
+        
     }
 }
 
-a {
-    text-decoration: none;
-}
+
 
