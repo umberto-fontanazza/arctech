@@ -1,3 +1,5 @@
+@use "./typography.scss";
+
 html {
     --color-bright: white;
     --color-dark: black;
@@ -56,6 +58,18 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 1.1em;
+        max-width: 40vw;
+        text-align: center;
+        margin-bottom: 1.7em;
+    }
 
     a {
         color: var(--color-bright, white);
