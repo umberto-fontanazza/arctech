@@ -49,6 +49,7 @@
         &:first-of-type {
             margin-right: 10px;
             background-color: var(--color-accent);
+            background: var(--linear-gradient-accent);
         }
     }
 
@@ -83,6 +84,7 @@
         margin: 20px 0;
         max-width: 300px;
         max-height: 450px;
+        border-radius: var(--border-radius-default);
 
 /*         background-image: url("../Images/hero-image.jpg");
         background-image: -webkit-image-set();
@@ -117,50 +119,6 @@
     }
 }
 
-#features-2 {
-    display: flex;
-    flex-wrap: wrap;
-    /* color: var(--color-dark, black); */
-
-    .feature-box {
-        height: 70vh;
-        padding: 2em;
-        margin: 20px 0;
-        max-width: 300px;
-        max-height: 450px;
-
-/*         background-image: url("../Images/hero-image.jpg");
-        background-image: -webkit-image-set();
-        background-image: image-set(); */
-
-        h3 {
-            &::after {
-                content: "";
-                background-color: var(--color-accent);
-                display: block;
-                height: 2px;
-                width: 100%;
-                position: relative;
-                top: 5px;
-            }
-        }
-
-
-    }
-
-    @media screen and (min-width: 768px) {
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-
-        .feature-box {
-            flex-basis: 25%;
-            &:not(:last-of-type) {
-                margin-right: 3vw;
-            }
-        }
-    }
-}
 
 #contact-us {
     display: flex;
@@ -179,6 +137,7 @@
         margin: 0 auto;
         max-width: 500px;
         width: 100%;
+        border-radius: var(--border-radius-default);
 
         h2 {
             margin-top: 0;
@@ -196,6 +155,7 @@
         }
         .btn {
             background-color: var(--color-accent,red);
+            background: var(--linear-gradient-accent);
             color: var(--color-bright,white);
             border: none;
             align-self: flex-start;
