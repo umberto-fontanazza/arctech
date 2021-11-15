@@ -5,10 +5,14 @@ html {
     --color-bright: white;
     --color-dark: black;
     --color-accent: #e52b36;
+    --color-accent-dark: #444143;
+    --color-accent-bright: #948e8d;
     --transform-scale-default: scale(1.05);
     --transition-default: 350ms ease;
+    --border-radius-default: 5px;
 
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 body {
@@ -17,6 +21,7 @@ body {
 }
 
 section {
+    scroll-snap-align: center;
     padding: 0 20px;
     border-bottom: 1px solid black;
 
@@ -29,10 +34,11 @@ section {
     display: inline-block;
     background-color: var(--color-dark, black);
     padding: 12px;
-    border-radius: 5px;
+    border-radius: var(--border-radius-default,5px);
     transition: var(--transition-default, 350ms ease);
     cursor: pointer;
-    min-width: 7.5em;
+    min-width: min(7.5em, 30vw);
+    text-align: center;
 
     &:hover {
         transform: var(--transform-scale-default,scale(1.05));
@@ -56,9 +62,42 @@ a {
 
 input {
     padding: 0 0.5em;
+    font-size: 1em;
     &:focus {
         outline-color: var(--color-accent,red);
+        outline-style: solid;
     }
+}
+
+.glassmorphism {
+    background: rgba( 255, 255, 255, 0.6 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    input {
+        background-color: transparent;
+        border-style: solid;
+        border-radius: var(--border-radius-default);
+        border-color: var(--color-accent-dark);
+
+        &:focus {
+            outline: none;
+            border-color: var(--color-accent);
+        }
+    }
+}
+
+.shadowed {
+    -webkit-box-shadow: 0px 0px 8px 5px rgba(0,0,0,0.6); 
+    box-shadow:rgba(62, 57, 107, 0.3) 0px 6px 16px 0px;
+    border-radius: 10px;
+    background: linear-gradient(
+        45deg, var(--color-accent-bright), var(--color-accent-dark)
+    );
+    color: white;
 }
 
 
