@@ -4,7 +4,7 @@
 html {
     --color-bright: white;
     --color-dark: black;
-    --color-accent: #e52b36;
+    --color-accent: rgb(229, 43, 54);
     --color-accent-dark: #444143;
     --color-accent-bright: #948e8d;
     --transform-scale-default: scale(1.05);
@@ -18,7 +18,9 @@ html {
     --border-radius-default: 10px;
 
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    @media screen and (min-width: 768px) {
+        scroll-snap-type: y mandatory;
+    }
 }
 
 body {
@@ -101,5 +103,7 @@ input {
     }
 }
 
-
+::selection {
+    background-color: var(--color-accent);
+}
 

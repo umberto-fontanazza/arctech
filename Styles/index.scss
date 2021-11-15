@@ -75,8 +75,11 @@
 #features {
     display: flex;
     flex-wrap: wrap;
-    /* color: var(--color-dark, black); */
-    background-image: url("https://cdn.pixabay.com/photo/2016/08/01/14/44/fist-1561157_1280.jpg") ;
+/*     background-image: url("https://cdn.pixabay.com/photo/2016/08/01/14/44/fist-1561157_1280.jpg") ;
+ */
+
+/*     background-image: url("https://images.unsplash.com/photo-1517838277536-f5f99be501cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80"); */
+    background-image: url("https://burst.shopifycdn.com/photos/exercise-stretch.jpg?width=1850&format=pjpg&exif=1&iptc=1");
 
     .feature-box {
         height: 70vh;
@@ -85,10 +88,6 @@
         max-width: 300px;
         max-height: 450px;
         border-radius: var(--border-radius-default);
-
-/*         background-image: url("../Images/hero-image.jpg");
-        background-image: -webkit-image-set();
-        background-image: image-set(); */
 
         h3 {
             &::after {
