@@ -113,7 +113,7 @@ input {
 .glassmorphism {
     background: rgba( 0, 0, 0, 0.5 );
     color: var(--color-bright);
-    box-shadow: 0 8px 32px 0 rgba(229, 43, 54, 0.37);
+    box-shadow: 0 4px 6px 0 rgba(229, 43, 54, 0.37);
     backdrop-filter: blur(var(--backdrop-filter-default));
     -webkit-backdrop-filter: blur(var(--backdrop-filter-default));
     border: 1px solid rgba( 0, 0, 0, 0.18 );
@@ -132,7 +132,7 @@ input {
     }
 
     &:hover {
-        box-shadow: 0 4px 6px 0 rgba(229, 43, 54, 0.37);
+        box-shadow: 0 8px 32px 0 rgba(229, 43, 54, 0.37);
     }
 }
 
