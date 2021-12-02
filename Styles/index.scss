@@ -1,12 +1,12 @@
 #main-slider {
     --overlay-opacity: 0.2;
     --overlay-color: rgba(0,0,0,var(--overlay-opacity));
-    background-image: url("../Images/hero-image.jpg");
+    background-image: url("/Images/hero-image.jpg");
     background-image: -webkit-image-set(
-        url("../Images/hero-image.jpg") type("image/jpg")
+        url("/Images/hero-image.jpg") type("image/jpg")
     );
     background-image: image-set(
-        url("../Images/hero-image.jpg") type("image/jpg")
+        url("/Images/hero-image.jpg") type("image/jpg")
     );
     background-size: cover;
     background-position: center;
