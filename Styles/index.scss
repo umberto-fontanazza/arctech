@@ -165,9 +165,35 @@
 
 #about-us {
 
+    display: flex;
+    align-items: center;
+
+    &>:first-child {
+        margin-left: var(--padding-section-horizontal);
+    }
+    &>:last-child {
+        margin-right: var(--padding-section-horizontal);
+    }
+
     img {
-        max-width: 400px;
+        max-width: calc(100% - 2* var(--padding-section-horizontal));
+        flex: 1;
         aspect-ratio: 1/1;
         object-fit: cover;
+    }
+
+    .column {
+        max-width: calc(100% - 2*var(--padding-section-horizontal));
+        flex: 1;
+    }
+
+    @media screen and (min-width: 768px) {
+        img {
+            max-width: calc(50% - var(--padding-section-horizontal));
+        }
+
+        .column {
+            max-width: calc(50% - var(--padding-section-horizontal));
+        }
     }
 }
