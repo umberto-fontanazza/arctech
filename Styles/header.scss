@@ -16,8 +16,10 @@
     .logo-container {
         display: inline-block;
         height: 70%;
-        aspect-ratio: 20/9;
-        background-color: rgba(55,55,74,0.7);
+
+        img {
+            height: 100%;
+        }
     }
 
     nav {
