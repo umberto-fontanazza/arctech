@@ -87,7 +87,6 @@
         margin: 20px 0;
         max-width: 300px;
         max-height: 450px;
-        border-radius: var(--border-radius-default);
 
         h3 {
             &::after {
@@ -136,7 +135,6 @@
         margin: 0 auto;
         max-width: 500px;
         width: 100%;
-        border-radius: var(--border-radius-default);
 
         h2 {
             margin-top: 0;
@@ -176,7 +174,8 @@
     }
 
     img {
-        max-width: calc(100% - 2* var(--padding-section-horizontal));
+        width: calc(100% - 2* var(--padding-section-horizontal));
+        max-width: 450px;
         flex: 1;
         aspect-ratio: 1/1;
         object-fit: cover;

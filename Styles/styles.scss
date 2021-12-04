@@ -118,6 +118,7 @@ input {
     -webkit-backdrop-filter: blur(var(--backdrop-filter-default));
     border: 1px solid rgba( 0, 0, 0, 0.18 );
     transition: var(--transition-default);
+    border-radius: var(--border-radius-default);
 
     input {
         background-color: transparent;
