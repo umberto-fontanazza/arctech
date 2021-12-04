@@ -120,7 +120,7 @@ input {
     transition: var(--transition-default);
     border-radius: var(--border-radius-default);
 
-    input {
+    input,textarea {
         background-color: transparent;
         border-style: solid;
         border-radius: var(--border-radius-default);
@@ -141,3 +141,6 @@ input {
     background-color: var(--color-accent);
 }
 
+.subtitle {
+    color: var(--color-accent);
+}

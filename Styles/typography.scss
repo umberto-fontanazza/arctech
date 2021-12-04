@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Import from google fonts*/
+
+/**
+ * To use the fonts imported above use:
+ * font-family: 'Libre Baskerville', serif;
+ * font-family: 'Montserrat', sans-serif;
+ * font-family: 'Karla', sans-serif;
+**/
+
+html {
+  --font-family-titles: 'Libre Baskerville', serif;
+  --font-family: 'Montserrat', sans-serif;
+  --font-family-subtitles: 'Karla', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-family-titles);
+}
+
+body,p,span {
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+.subtitle  {
+  font-family: var(--font-family-subtitles);
+  font-weight: 500;
+}
+
 h1 {
     margin-top: 0;
     font-size: 3.052rem;
