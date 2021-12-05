@@ -164,7 +164,9 @@
 #about-us {
 
     display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 50px;
 
     h2 {
         margin: 0;
@@ -185,8 +187,27 @@
     }
 
     @media screen and (min-width: 768px) {
-        img, .column {
+        & > img, & > .column {
             max-width: 40%;
+        }
+    }
+
+    .social-container {
+        display: flex;
+        gap: 10px;
+        .social-link {
+            display: inline-block;
+            aspect-ratio: 1/1;
+            max-width: 25px;
+            transition: var(--transition-default);
+
+            img {
+                width: 100%;
+            }
+
+            &:hover {
+                transform: var(--transform-scale-default);
+            }
         }
     }
 }
