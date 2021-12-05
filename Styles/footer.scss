@@ -1,7 +1,107 @@
 footer {
+    background-color: var(--color-bright);
+    color: var(--color-dark);
+    width: 100%;
+    padding-top: 30px;
+
+    .logo-container {
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .footer-menu-container {
+        text-align: center;
+
+        .footer-column-title {
+            display: block;
+            margin-bottom: 10px;
+            font-family: var(--font-family-titles);
+            margin-top: 2em;
+        }
+
+        nav a {
+            display: block;
+            color: var(--color-dark);
+        }
+    }
+
     .low-footer {
-        width: 100%;
-        min-height: 70px;
-        background-color: var(--color-accent);
+        background: var(--linear-gradient-accent);
+        color: var(--color-bright);
+        margin-top: 3rem;
+        height: 3em;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+
+        .low-footer-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        scroll-snap-align: start;
+
+        .high-footer {
+            display: flex;
+            justify-content: space-between;
+
+            .footer-menu-container {
+                text-align: left;
+
+                .footer-column-title {
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                    &::selection {
+                        color: var(--color-bright);
+                        background-color: var(--color-dark);
+                    }
+                }
+                nav {
+                    a {
+                        transition: var(--transition-duration-default);
+                        &:hover {
+                            transform: translate(2px);
+                        }
+                    }
+                }
+            }
+        }
+
+        .high-footer,
+        .low-footer {
+            &>:first-child {
+                margin-left: var(--padding-section-horizontal)
+            }
+
+            &>:last-child {
+                margin-right: var(--padding-section-horizontal);
+            }
+        }
+
+        .low-footer {
+            .low-footer-inner {
+                flex-direction: row;
+
+                .social-container {
+                    display: inline-block;
+                }
+
+                .copyright {
+                    &::selection {
+                        color: var(--color-bright);
+                        background-color: var(--color-dark);
+                    }
+                }
+            }
+        }
     }
 }
