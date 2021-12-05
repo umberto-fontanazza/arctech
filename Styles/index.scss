@@ -73,22 +73,25 @@
 }
 
 #features {
-    display: flex;
-    flex-wrap: wrap;
-/*     background-image: url("https://cdn.pixabay.com/photo/2016/08/01/14/44/fist-1561157_1280.jpg") ;
- */
+    padding: 50px var(--padding-section-horizontal);
 
-/*     background-image: url("https://images.unsplash.com/photo-1517838277536-f5f99be501cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80"); */
-    background-image: url("https://burst.shopifycdn.com/photos/exercise-stretch.jpg?width=1850&format=pjpg&exif=1&iptc=1");
+    h2 {
+        margin: 0;
+    }
+
+    .feature-box-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
     .feature-box {
-        height: 70vh;
-        padding: 2em;
-        margin: 20px 0;
-        max-width: 300px;
-        max-height: 450px;
+        height: 55vh;
+        padding: 20px;
+        box-sizing: border-box;
 
         h3 {
+            font-size: 1.7em;
             &::after {
                 content: "";
                 background-color: var(--color-accent);
@@ -99,20 +102,31 @@
                 top: 5px;
             }
         }
-
-
     }
 
     @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-wrap: nowrap;
+        gap: 50px;
+        padding: 0;
+
+        .section-title-container {
+            width: 100%;
+            text-align: center;
+        }
+
+        .feature-box-container {
+            width: 100%;
+            flex-direction: row;
+            gap: 40px;
+            justify-content: center;
+        }
 
         .feature-box {
-            flex-basis: 25%;
-            &:not(:last-of-type) {
-                margin-right: 3vw;
-            }
+            margin: 20px 0;
+            width: 400px;
         }
     }
 }
