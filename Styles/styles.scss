@@ -64,11 +64,11 @@ body {
 
 section {
     scroll-snap-align: center;
-    padding: 0 var(--padding-section-horizontal);
-    border-bottom: 1px solid black;
+    padding: 3.5vh var(--padding-section-horizontal);
 
     @media screen and (min-width: 768px) {
-        height: 100vh;
+        border-bottom: 1px solid black;
+        min-height: 100vh;
     }
 }
 
