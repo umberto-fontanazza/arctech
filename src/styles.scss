@@ -1,1 +1,189 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+    --backdrop-filter-default: 9px;
+    --border-radius-default: 10px;
+
+    scroll-behavior: smooth;
+    @media screen and (min-width: 768px) {
+        scroll-snap-type: y mandatory;
+    }
+
+
+    --padding-section-horizontal: 20px;
+    --header-height: 70px;
+    --header-margin-vertical: 18px;
+    --transition-duration-default: 350ms;
+    --transition-duration-long: 1s;
+    --transition-default: var(--transition-duration-default) ease;
+
+    /* Colors */
+    --color-rgbval-accent: 229, 43, 54;
+    --color-accent: rgb(var(--color-rgbval-accent));
+    --color-rgbval-bright: 255,255,255;
+    --color-bright: rgb(var(--color-rgbval-bright));
+    --color-rgbval-dark: 0,0,0;
+    --color-dark: rgb(var(--color-rgbval-dark));
+    --color-accent-dark: #444143;
+    --color-accent-bright: #948e8d;
+    --linear-gradient-accent: linear-gradient(
+        45deg,
+        #d1323d,
+        #ed2834
+    );
+
+
+    --transform-scale-default: scale(1.05);
+    --backdrop-filter-default: blur(10px);
+
+    /* Animations */
+    --animation-duration-default: 1.2s;
+    --animation-timing-function-default: ease-out;
+    --animation-delay-default: 350ms;
+    --animation-direction-default: normal;
+    --animation-iteration-count-default: 1;
+    --animation-fill-mode-default: both;
+
+    /* Animation fade in up */
+    --animation-fade-in-up-transform-offset: 10vh;
+    --animation-fade-in-up: fade-in-up var(--animation-duration-default) ease-in var(--animation-delay-default) var(--animation-fill-mode-default);
+
+    @media screen and (min-width: 768px) {
+        --padding-section-horizontal: 12.5vw;
+    }
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    display: block;
+    scroll-snap-align: center;
+    padding: 3.5vh var(--padding-section-horizontal);
+
+    @media screen and (min-width: 768px) {
+        border-bottom: 1px solid black;
+        min-height: 100vh;
+    }
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--color-dark, black);
+    padding: 12px;
+    border-radius: var(--border-radius-default,5px);
+    transition: var(--transition-default, 350ms ease);
+    cursor: pointer;
+    min-width: min(7.5em, 30vw);
+    text-align: center;
+
+    &:hover {
+        transform: var(--transform-scale-default,scale(1.05));
+    }
+
+    &::first-letter {
+        text-transform: capitalize;
+    }
+
+    &:focus {
+        outline-color: var(--color-dark,black);
+        outline-style: solid;
+        outline-offset: 0;
+        outline-width: 2px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    padding: 0 0.5em;
+    font-size: 1em;
+    &:focus {
+        outline-color: var(--color-accent,red);
+        outline-style: solid;
+    }
+}
+
+.glassmorphism {
+    background: rgba( 0, 0, 0, 0.5 );
+    color: var(--color-bright);
+    box-shadow: 0 4px 6px 0 rgba(229, 43, 54, 0.37);
+    backdrop-filter: blur(var(--backdrop-filter-default));
+    -webkit-backdrop-filter: blur(var(--backdrop-filter-default));
+    border: 1px solid rgba( 0, 0, 0, 0.18 );
+    transition: var(--transition-default);
+    border-radius: var(--border-radius-default);
+
+    input,textarea {
+        background-color: transparent;
+        border-style: solid;
+        border-radius: var(--border-radius-default);
+        border-color: var(--color-bright);
+
+        &:focus {
+            outline: none;
+            border-color: var(--color-accent);
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 8px 32px 0 rgba(229, 43, 54, 0.37);
+    }
+}
+
+::selection {
+    background-color: var(--color-accent);
+}
+
+.subtitle {
+    color: var(--color-accent);
+}
+
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Import from google fonts*/
+
+/**
+ * To use the fonts imported above use:
+ * font-family: 'Libre Baskerville', serif;
+ * font-family: 'Montserrat', sans-serif;
+ * font-family: 'Karla', sans-serif;
+**/
+
+html {
+  --font-family-titles: 'Libre Baskerville', serif;
+  --font-family: 'Montserrat', sans-serif;
+  --font-family-subtitles: 'Karla', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-family-titles);
+}
+
+body,p,span {
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+.subtitle  {
+  font-family: var(--font-family-subtitles);
+  font-weight: 500;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+  }
+
+  h2 {font-size: 2.441rem;}
+
+  h3 {font-size: 1.953rem;}
+
+  h4 {font-size: 1.563rem;}
+
+  h5 {font-size: 1.25rem;}
+
+  small, .text_small {font-size: 0.8rem;}

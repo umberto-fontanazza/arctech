@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1247.98 431.47">
+    <defs>
+        <style>
+            .cls-1{
+                font-size:132.17px;
+                font-family:Montserrat-Thin, Montserrat;
+                font-weight:200;
+                letter-spacing:0.1em;
+            }
+
+            .cls-1,.cls-3 {
+                fill:#ffffff;
+            }
+
+            .cls-2{
+                letter-spacing:0.1em;
+            }
+
+            .cls-4 {
+                fill:#e30613;
+            }
+
+            .cls-5 {
+                fill: none;
+                stroke:#ffffff;
+                stroke-miterlimit:10;
+            }
+        </style>
+    </defs>
+    <g id="Livello_2" data-name="Livello 2">
+        <g id="Livello_1-2" data-name="Livello 1">
+            <text class="cls-1" transform="translate(463.75 260.82) scale(0.85 1)">ARCHT<tspan class="cls-2" x="525.92" y="0">E</tspan>
+                <tspan x="626.77" y="0">CH</tspan>
+            </text>
+            <path class="cls-3" d="M391.65,341.76a216.25,216.25,0,0,0-83.36-46.35l27.41,74.26H402Z"/>
+            <path class="cls-3" d="M216.51,232.42l34.27-92.83L285,232.42c37.2,9.24,69.22,33.21,90.6,66L288.14,61.29H213.42l-87.5,237.08C147.29,265.63,179.32,241.66,216.51,232.42Z"/>
+            <path class="cls-3" d="M109.9,341.76,99.6,369.67h66.26l27.41-74.26A216.36,216.36,0,0,0,109.9,341.76Z"/>
+            <path class="cls-4" d="M410.35,352.27s-60.41-107.8-159.57-107.8S91.2,352.27,91.2,352.27s67.42-82.88,159.58-82.88,159.57,82.88,159.57,82.88"/>
+            <rect class="cls-5" x="0.5" y="0.5" width="1246.98" height="430.47"/>
+        </g>
+    </g>
+</svg>

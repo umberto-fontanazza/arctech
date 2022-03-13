@@ -1,0 +1,58 @@
+:host {
+    padding: 50px var(--padding-section-horizontal);
+
+    h2 {
+        margin: 0;
+    }
+
+    .feature-box-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature-box {
+        height: 55vh;
+        padding: 20px;
+        box-sizing: border-box;
+
+        h3 {
+            font-size: 1.4em;
+            &::after {
+                content: "";
+                background-color: var(--color-accent);
+                display: block;
+                height: 2px;
+                width: 100%;
+                position: relative;
+                top: 5px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 0;
+
+        .section-title-container {
+            width: 100%;
+            text-align: center;
+        }
+
+        .feature-box-container {
+            width: 100%;
+            flex-direction: row;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .feature-box {
+            margin: 20px 0;
+            width: 400px;
+        }
+    }
+}
