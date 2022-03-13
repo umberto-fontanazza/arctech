@@ -1,9 +1,9 @@
-<a href="/index.html#main-slider" class="logo-container">
+<a routerLink="home" fragment="main-slider" class="logo-container">
     <img src="/assets/arctech-logo.svg" alt="Arctech logo">
 </a>
 <nav>
-    <a [routerLink]="['home#features']" class="menu-link">Vantaggi</a>
-    <a href="/home#clients" class="menu-link">Clienti</a>
-    <a href="/index.html#contact-us" class="menu-link">Contattami</a>
-    <a href="/home/#about-us" class="menu-link">Chi sono</a>
+    <a routerLink="home" fragment="features" class="menu-link">Vantaggi</a>
+    <a routerLink="home" fragment="gallery" class="menu-link">Galleria</a>
+    <a routerLink="home" fragment="contact-us" class="menu-link">Contattami</a>
+    <a routerLink="home" fragment="about-us" class="menu-link">Chi sono</a>
 </nav>
