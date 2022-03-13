@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./Styles/styles.scss ./Styles/css/styles.css --style compressed"
+    "sass": "sass --watch ./Styles/styles.scss ./Styles/css/styles.css --style compressed",
+    "deploy": "firebase deploy"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/umberto-fontanazza/arctech/issues"
   },
-  "homepage": "https://github.com/umberto-fontanazza/arctech#readme"
+  "homepage": "https://github.com/umberto-fontanazza/arctech#readme",
+  "devDependencies": {
+    "firebase-tools": "^10.2.2"
+  }
 }
