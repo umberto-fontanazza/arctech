@@ -7,3 +7,4 @@
     <a routerLink="home" fragment="contact-us" class="menu-link">Contattami</a>
     <a routerLink="home" fragment="about-us" class="menu-link">Chi sono</a>
 </nav>
+<app-hamburger-menu (menuToggle)="mobileMenuToggle()" [ngClass]="{'open': mobileMenuOpen}"></app-hamburger-menu>

@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  mobileMenuOpen: boolean = false
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  mobileMenuToggle(): void {
+    this.mobileMenuOpen = !this.mobileMenuOpen
   }
 
 }

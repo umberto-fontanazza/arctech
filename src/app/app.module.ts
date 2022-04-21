@@ -13,6 +13,7 @@ import { ContactUsComponent } from './sections/contact-us/contact-us.component';
 import { AboutUsComponent } from './sections/about-us/about-us.component';
 import { UnderConstructionComponent } from './pages/under-construction/under-construction.component';
 import { WhatsappComponent } from './snippets/whatsapp/whatsapp.component';
+import { HamburgerMenuComponent } from './snippets/hamburger-menu/hamburger-menu.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { WhatsappComponent } from './snippets/whatsapp/whatsapp.component';
     ContactUsComponent,
     AboutUsComponent,
     UnderConstructionComponent,
-    WhatsappComponent
+    WhatsappComponent,
+    HamburgerMenuComponent
   ],
   imports: [
     BrowserModule,

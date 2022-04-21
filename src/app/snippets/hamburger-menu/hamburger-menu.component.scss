@@ -1,0 +1,70 @@
+:host {
+    position: absolute;
+    right: 1.5em;
+}
+
+#hamburger-menu {
+    --size: 20px;
+    --bar-size: 3px;
+    /* To modify dimensions change the --size variable, don't change code below */
+    width: var(--size);
+    height: var(--size);
+    transition: var(--transition-default);
+    transform-origin: center;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar {
+    width: 100%;
+    height: var(--bar-size);
+    border-radius: calc(var(--bar-size)/2);
+    background-color: white;
+    transition: var(--transition-default);
+
+    &.first,&.third {
+        transition-delay: var(--transition-delay-default);
+    }
+
+    &.first {
+        transform-origin: center left;
+    }
+
+    &.second {
+        width: 80%;
+    }
+
+    &.third {
+        transform-origin: center left;
+    }
+}
+
+:host.open {
+
+    .first,.third {
+        width: calc(100%*1.4142135);
+    }
+    .first {
+        transform: translateY(calc(var(--bar-size)/2*(-1))) rotate(45deg);
+    }
+    .second {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    .third {
+        transform: translateY(calc(var(--bar-size)/2)) rotate(-45deg);
+    }
+
+    &:hover {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    :host {
+        display: none;
+    }
+}
