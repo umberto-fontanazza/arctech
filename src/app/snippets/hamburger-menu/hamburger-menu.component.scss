@@ -22,7 +22,7 @@
     width: 100%;
     height: var(--bar-size);
     border-radius: calc(var(--bar-size)/2);
-    background-color: white;
+    background-color: var(--color-bright);
     transition: var(--transition-default);
 
     &.first,&.third {
