@@ -12,6 +12,7 @@ import { GalleryComponent } from './sections/gallery/gallery.component';
 import { ContactUsComponent } from './sections/contact-us/contact-us.component';
 import { AboutUsComponent } from './sections/about-us/about-us.component';
 import { UnderConstructionComponent } from './pages/under-construction/under-construction.component';
+import { WhatsappComponent } from './snippets/whatsapp/whatsapp.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { UnderConstructionComponent } from './pages/under-construction/under-con
     GalleryComponent,
     ContactUsComponent,
     AboutUsComponent,
-    UnderConstructionComponent
+    UnderConstructionComponent,
+    WhatsappComponent
   ],
   imports: [
     BrowserModule,

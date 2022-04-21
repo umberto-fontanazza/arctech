@@ -1,0 +1,20 @@
+:host {
+    display: block;
+    width: 3em;
+    position: fixed;
+    bottom: 2em;
+    right: 1em;
+    z-index: 1000000;
+
+    img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    :host {
+        width: 4em;
+        right: 2em;
+        bottom: 3em;
+    }
+}
