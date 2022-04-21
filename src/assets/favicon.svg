@@ -3,7 +3,7 @@
 
     <style>
         .fill-color {
-            fill: #ffffff;
+            fill: #000000;
         }
 
         .fill-color-secondary {
