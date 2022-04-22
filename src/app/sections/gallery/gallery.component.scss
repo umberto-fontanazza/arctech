@@ -18,7 +18,6 @@
         .image-container {
             width: 100%;
             aspect-ratio: 1/1;
-            background-color: lightblue;
             overflow: hidden;
             position: relative;
             &:hover .hover-cover {
@@ -40,6 +39,10 @@
         transform: translateY(-101%);
         padding: 30px;
         box-sizing: border-box;
+    }
+
+    h3 {
+        font-size: 1.2em;
     }
 
     @media screen and (min-width: 768px) {
