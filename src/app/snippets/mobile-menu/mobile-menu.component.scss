@@ -1,0 +1,35 @@
+:host {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.6); /*TODO*/
+    z-index: 20;
+    transition: var(--transition-default);
+    backdrop-filter: blur(5px);
+
+    &:not(.open) {
+        transform: translateY(-100%);
+    }
+
+    padding: 0 var(--padding-section-horizontal);
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+a {
+    color: var(--color-bright);
+}
+
+@media only screen and (min-width: 768px) {
+    :host {
+        display: none;
+    }
+}

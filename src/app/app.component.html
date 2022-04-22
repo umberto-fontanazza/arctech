@@ -1,4 +1,5 @@
-<app-header class="glassmorphism" id="main-header"></app-header>
+<app-header class="glassmorphism" id="main-header" (mobileMenu)="mobileMenuToggle()"></app-header>
 <app-whatsapp phone="3331522277"></app-whatsapp>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
+<app-mobile-menu [ngClass]="{'open': mobileMenuOpen}"></app-mobile-menu>

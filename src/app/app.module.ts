@@ -14,6 +14,7 @@ import { AboutUsComponent } from './sections/about-us/about-us.component';
 import { UnderConstructionComponent } from './pages/under-construction/under-construction.component';
 import { WhatsappComponent } from './snippets/whatsapp/whatsapp.component';
 import { HamburgerMenuComponent } from './snippets/hamburger-menu/hamburger-menu.component';
+import { MobileMenuComponent } from './snippets/mobile-menu/mobile-menu.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HamburgerMenuComponent } from './snippets/hamburger-menu/hamburger-menu
     AboutUsComponent,
     UnderConstructionComponent,
     WhatsappComponent,
-    HamburgerMenuComponent
+    HamburgerMenuComponent,
+    MobileMenuComponent
   ],
   imports: [
     BrowserModule,

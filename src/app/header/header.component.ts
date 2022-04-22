@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   mobileMenuOpen: boolean = false
+  @Output() mobileMenu = new EventEmitter()
 
   constructor() { }
 
@@ -15,6 +16,7 @@ export class HeaderComponent implements OnInit {
 
   mobileMenuToggle(): void {
     this.mobileMenuOpen = !this.mobileMenuOpen
+    this.mobileMenu.emit()
   }
 
 }

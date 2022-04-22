@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'arctech';
+  mobileMenuOpen: boolean = false
+
+  mobileMenuToggle(): void {
+    this.mobileMenuOpen = !this.mobileMenuOpen
+  }
 }
