@@ -72,3 +72,13 @@
     height: unset;
     width: 100%;
 }
+
+.image-container:nth-of-type(6) {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    img {
+        height: unset;
+        width: 100%;
+    }
+}
