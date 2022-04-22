@@ -26,11 +26,13 @@
             margin-top: 0;
             text-align: center;
         }
+
         input:not([type=submit]) {
             width: 100%;
             margin-top: 0.2em;
             height: 2.3em;
             box-sizing: border-box;
+            color: var(--color-bright);
         }
         .btn {
             background-color: var(--color-accent,red);
