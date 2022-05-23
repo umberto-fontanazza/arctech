@@ -23,6 +23,16 @@
             &:hover .hover-cover {
                 transform: translateY(0);
             }
+
+            @supports not (aspect-ratio: 1/1) {
+                padding-bottom: 100%;
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+
         }
     }
 
