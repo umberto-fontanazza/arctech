@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Notification, NotificationsService } from 'src/app/services/notifications.service';
 
 @Component({
   selector: 'app-notification',
@@ -11,12 +12,12 @@ export class NotificationComponent implements OnInit {
   @Input() id: number = -1
   @Output() close = new EventEmitter<number>()
 
-  constructor() { }
+  constructor(private _notificationService: NotificationsService) { }
 
   ngOnInit(): void {
   }
 
   closeNotification() {
-    this.close.emit(this.id)
+    this._notificationService.deleteNotification(this.id)
   }
 }

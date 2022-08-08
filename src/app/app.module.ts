@@ -17,6 +17,7 @@ import { HamburgerMenuComponent } from './snippets/hamburger-menu/hamburger-menu
 import { MobileMenuComponent } from './snippets/mobile-menu/mobile-menu.component';
 import { NotificationAreaComponent } from './snippets/notification-area/notification-area.component';
 import { NotificationComponent } from './snippets/notification/notification.component';
+import { NotificationsService } from './services/notifications.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { NotificationComponent } from './snippets/notification/notification.comp
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [NotificationsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
