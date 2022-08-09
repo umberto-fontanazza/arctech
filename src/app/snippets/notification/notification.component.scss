@@ -68,3 +68,15 @@ p {
         transform: translateY(calc(var(--bar-size)/2)) rotate(-45deg);
     }
 }
+
+@media only screen and (min-width: 768px) {
+    :host {
+        gap: 1em;
+    }
+    .close-button {
+        width: 1.5em;
+        min-width: 1.5em;
+        max-width: 1.5em;
+        padding-top: 1.5em;
+    }
+}
