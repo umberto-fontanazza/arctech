@@ -27,7 +27,8 @@ p {
 }
 
 .close-button {
-    flex-basis: 7.5%;
+    width: 7.5%;
+    min-width: 7.5%;
     padding-top: 7.5%;
     height: 0%;
     position: relative;
