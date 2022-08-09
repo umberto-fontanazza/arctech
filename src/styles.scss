@@ -70,7 +70,8 @@ body {
 
 .btn {
     display: inline-block;
-    background-color: var(--color-dark, black);
+    color: var(--color-bright, white);
+    background: var(--linear-gradient-accent);
     padding: 12px;
     border-radius: var(--border-radius-default,5px);
     transition: var(--transition-default, 350ms ease);
