@@ -12,7 +12,7 @@ export class NotificationsService {
     return this.notifications
   }
 
-  addNotification(noti: Notification) {
+  sendNotification(noti: Notification) {
     this.notifications.push(noti)
   }
 
