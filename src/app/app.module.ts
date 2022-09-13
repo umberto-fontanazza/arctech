@@ -18,6 +18,7 @@ import { MobileMenuComponent } from './snippets/mobile-menu/mobile-menu.componen
 import { NotificationAreaComponent } from './snippets/notification-area/notification-area.component';
 import { NotificationComponent } from './snippets/notification/notification.component';
 import { NotificationsService } from './services/notifications.service';
+import { ProductInfoComponent } from './sections/product-info/product-info.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { NotificationsService } from './services/notifications.service';
     HamburgerMenuComponent,
     MobileMenuComponent,
     NotificationAreaComponent,
-    NotificationComponent
+    NotificationComponent,
+    ProductInfoComponent
   ],
   imports: [
     BrowserModule,
